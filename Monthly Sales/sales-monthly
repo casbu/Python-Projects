@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Jun 23 15:29:34 2023
+
+@author: casbu
+"""
+
+# Cassandra Terrell-Burleson
+# June 23, 2023
+# This program will display 12 months of sales data, calculate the total yearly sales and
+# average monthly sales. Then it allows the user to edit the sales for any month.
+
+def display_menu():
+    print("COMMAND MENU")
+    print("------------")
+    print("monthly - View monthly sales")
+    print("yearly - View yearly summary")
+    print("edit - Edit sales for a month")
+    print("exit - Exit program")
+    print()
+
+def view_monthly_sales(sales_list):
+    for row in sales_list:
+        print(row[0] + " - " + row[1])
+
+def view_yearly_sales(sales_list):
+    total = 0
+    for row in sales_list:
+        total += int(row[1])
+        
+    print("Yearly total:\t" + str(total))
+    average = round(total/ len(sales_list),2)
+    print("Monthly average:\t", average)
+    print()
+
+def edit_sales(sales_list):
+    
+    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    
+    # input month code
+    month_code = input("Three-letter Month:\t")
+    
+    # month code validation
+    if month_code not in months:
+        print("You did not enter a valid three-letter abbreviation.")
+        print()
+        month_code = input("Three-letter Month:\t")
+    
+    # input sales value
+    sales_value = input("Sales Amount:\t")
+    
+    # create new list
+    edit_list = (month_code,sales_value)
+    
+    for monthly_sale, sale in enumerate(sales_list):
+        if sale[0] == month_code:
+            sales_list[monthly_sale] = [edit_list[0],edit_list[1]]
+            print(f"Sales amount for {month_code} was modified.")
+            print()
+
+def main():
+    print("Monthly Sales Program")
+    print()
+    display_menu()
+    
+    monthlySales = [['Jan', '616'],
+                    ['Feb', '466'],
+                    ['Mar', '796'],
+                    ['Apr', '238'],
+                    ['May', '310'],
+                    ['Jun', '726'],
+                    ['Jul', '987'],
+                    ['Aug', '604'],
+                    ['Sep', '951'],
+                    ['Oct', '958'],
+                    ['Nov', '238'],
+                    ['Dec', '610']]
+    
+    while True:
+        command = input("Command:\t")
+        print()
+        
+        if command == "monthly":
+            view_monthly_sales(monthlySales)
+            print()
+        elif command == "yearly":
+            view_yearly_sales(monthlySales)
+        elif command == "edit":
+            edit_sales(monthlySales)
+        elif command == "exit":
+            break
+        else:
+            print("Not a valid option. Please try again.\n")
+    print("Bye!")
+
+if __name__ == "__main__":
+    main()
