@@ -5,7 +5,8 @@ Created on Thu Jul  6 08:15:37 2023
 
 @author: casbu
 """
-
+# Cass Burleson
+# July 6, 2023
 # This program calculates sales by row(region) and column(quarter) from a list of lists (sales), 
 # prints totals for each, as well as calculates total for entire sales list. 
 
