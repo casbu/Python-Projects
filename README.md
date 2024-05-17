@@ -7,4 +7,5 @@ Monthly Sales - Data Structures (Lists and Tuples)\
 Monthly Sales IO - File IO and Exceptions\
 Sales Report - Numbers & Strings\
 Arrival Time - Recursion\
-Monthly Sales (Dictionary) - Data Structures and OOP
+Monthly Sales (Dictionary) - Data Structures and OOP\
+Customer Viewer - OOP Classes
