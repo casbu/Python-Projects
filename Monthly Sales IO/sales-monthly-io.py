@@ -1,5 +1,4 @@
-# Cassandra Terrell-Burleson
-# June 26, 2023
+
 # This program will display 12 months of sales data, calculate the total yearly sales and
 # average monthly sales. Then it allows the user to edit the sales for any month. 
 # This program adds IO functionality, importing the monthly_sales csv file.

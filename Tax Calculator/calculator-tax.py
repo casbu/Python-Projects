@@ -1,6 +1,5 @@
-# Cass Burleson
-# Jun 15, 2023
-# Description: This program imports a seperate module into the main function to calculate sales tax and total after tax.
+
+# This program imports a seperate module into the main function to calculate sales tax and total after tax.
 
 import CalculationsModule as cM
 

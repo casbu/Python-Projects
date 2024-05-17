@@ -1,5 +1,4 @@
-# Cass Terrell-Burleson
-# June 12, 2023
+
 # This program has the user input a service cost and percentage to calculate the total tip the user should give in dollars and cents.
 
 # program header
