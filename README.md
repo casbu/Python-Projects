@@ -10,4 +10,5 @@ Arrival Time - Date & Time\
 Monthly Sales (Dictionary) - Data Structures and OOP\
 Customer Viewer - OOP Classes\
 Customer Employee Creator - Inheritance\
-Card Objects - OOP Design
+Card Objects - OOP Design\
+Task List - Databases
