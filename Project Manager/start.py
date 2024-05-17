@@ -1,3 +1,7 @@
+# The program displays all of the products available for ordering,
+# displays all of the items in a shopping basket, functionality to add a product to
+# the shopping basket, emove an item from the shopping basket, and close the program.
+
 from ProductObjects import Product, ProductInventory, Basket
 import FileIO
 
