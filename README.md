@@ -13,4 +13,12 @@ Customer Employee Creator - Inheritance\
 Card Objects - OOP Design\
 Project Manager - OOP Design\
 Task List - Databases\
-Movie List - Databases
+Movie List - Databases\
+
+Baseball Player Management System - Final Project
+v1 - FileIO & Lists
+<!-- 
+v2 - FileIO & Dictionaries
+v3 - OOP & Classes, 3-Tier
+v4 - OOP & Databases, 3-Tier 
+-->
