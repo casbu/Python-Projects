@@ -8,7 +8,7 @@ Created on Sat Jul 22 10:32:11 2023
 
 # This OOP displays a deck of cards where each card has a value. This program 
 # creates 2 classes that represent a card and a deck using composition.
-# It then prints all cards within the deck, assignes values depending on the 
+# It then prints all cards within the deck, assigns values depending on the 
 # rank, and prints the points and deck/hand information (card count).
 
 
