@@ -39,7 +39,6 @@ def add_padding(puzzle, length=9):
 # get middle indices
 def get_middle_index(puzzle):
     num_rows = len(puzzle)
-    #num_cols = max(len(row) for row in puzzle)
     num_cols = len(puzzle[0]) if num_rows > 0 else 0
     middle_row_index = num_rows // 2
     middle_col_index = num_cols // 2
@@ -257,16 +256,6 @@ def mirror_bottom_left_top_right(puzzle):
     for i in range(len(rotated_top_right_quadrant)):
         if i < len(new_puzzle):
             new_puzzle[middle_row_index + 1 + i][:middle_col_index] = rotated_top_right_quadrant[i]
-    #debug
-    # print("--BOTTOM LEFT--")
-    # print("BOTTOM LEFT QUAD: ", bottom_left_quadrant)
-    # print("ROTATED BOTTOM LEFT QUAD: ", rotated_bottom_left_quadrant)
-    # print("REVERSED BOTTOM LEFT ROWS QUAD: ", reversed_bottom_left_quadrant)
-    # print("---TOP RIGHT---")
-    # print("TOP RIGHT QUAD: ", top_right_quadrant)
-    # print("ROTATED TOP RIGHT QUAD: ", rotated_top_right_quadrant)
-    # print()
-    # print("NEW PUZZLE: ", new_puzzle)
     
     return new_puzzle
 
@@ -338,10 +327,6 @@ def rotate_outer_layer(puzzle):
     new_puzzle[2][2] = puzzle[6][2]
     new_puzzle[3][1] = puzzle[7][3]
 
-    #debug
-    # for row in new_puzzle:
-    #     print(row)
-
     return new_puzzle
 
 #7
@@ -383,14 +368,10 @@ def inverted_layers(puzzle):
     new_puzzle[5][5] = puzzle[3][3]
     new_puzzle[6][6] = puzzle[2][2]
 
-    # for row in new_puzzle:
-    #     print(row)
-
     return new_puzzle
 
 #puzzle manipulation
 def manipulate_puzzle(commas, puzzle, FILENAME):
-    # puzzle manipulation
     numbers = list(map(int, commas))
     
     digits = {
@@ -450,7 +431,6 @@ def collect_numbers(puzzle):
     concat_list = []
     for list in lists:
         concat_list.extend(list)
-    # print(concat_list)
     return concat_list
 
 #decode
@@ -463,7 +443,6 @@ def decode_list(concat_list):
             binary_list.append(0)
         elif concat_list[i] == concat_list[i + 1]:
             binary_list.append(0)
-    # print(binary_list)
     return binary_list
 
 # count binary
