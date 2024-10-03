@@ -14,5 +14,7 @@ Card Objects - OOP Design\
 Project Manager - OOP Design\
 Task List - Databases\
 Movie List - Databases\
-Baseball Player Management System - v1 - FileIO & Lists\ <!-- v2 - FileIO & Dictionaries, v3 - OOP & Classes, 3-Tier, v4 - OOP & Databases, 3-Tier -->
+Baseball Player Management System - v1 - FileIO & Lists\
 Puzzle-Based Password Generator - Matrix Manipulation, Transformation Logic
+
+ <!-- Baseball Player Management System: v2 - FileIO & Dictionaries, v3 - OOP & Classes, 3-Tier, v4 - OOP & Databases, 3-Tier -->
