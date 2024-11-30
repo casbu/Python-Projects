@@ -1,5 +1,5 @@
 # Author: Cass Burleson
-# Due Date: 2024-09-16
+# Creation Date: 2024-09-16
 # Program: puzzle-based password generator (File I/O, matrix manipulation, transformation logic)
 # Programed two ways of completing this project. First is through row and column manipulation, the second 
 # is through matrix index substitutions. (beginning at rotate_outer_layer)
